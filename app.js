@@ -10,19 +10,18 @@ function guess() {
     if (count > 0) {
         let txtInput = Number(document.getElementById("txtInput").value);
         if (txtInput === randomNum) {
-            lblResult.innerHTML = `Game over! The Correct number was ${count}`;
+            lblResult.innerHTML = `Game over.! The Correct number was ${count}`;
             lblChances.innerHTML = "";
         } else {
             if(randomNum>txtInput){
-                lblResult.innerHTML = "Too high.!";
+                lblResult.innerHTML = "Number is low. Try guessing a higher number.!";
             }else{
-                lblResult.innerHTML = "Too low.!";
+                lblResult.innerHTML = "Number is high. Try guessing a lower number.!";
             }
-            
             count--;
             lblChances.innerHTML = `Chances left: ${count}`;
         }
     } else {
-        lblResult.innerHTML = "No more chances!";
+        lblResult.innerHTML = "Game Over.! No more chances";
     }
 }
