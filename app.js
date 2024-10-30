@@ -1,5 +1,5 @@
 let randomNum = Math.floor((Math.random() * 10) + 1);
-// console.log(randomNum);
+console.log(randomNum);
 
 
 let lblChances = document.getElementById("lblChances");
@@ -18,10 +18,10 @@ function guess() {
         } else {
             if(randomNum>txtInput){
                 lblResult.innerHTML = `<p class="text-primary">Number is low.🔽 Try guessing a higher number.!</p>`;
-                alert("පොඩි වැඩී...😏 ලොකු නම්බරයක් එකක් දාන්න...");
+                alert("පොඩි වැඩී...😏 ලොකු Number එකක් දාන්න...");
             }else{
                 lblResult.innerHTML = `<p class="text-primary">Number is high.🔼 Try guessing a lower number.!</p>`;
-                alert("ලොකු වැඩී...🤯 පොඩි නම්බරයක් එකක් දාන්න...");
+                alert("ලොකු වැඩී...🤯 පොඩි Number එකක් දාන්න...");
             }
             count--;
             lblChances.innerHTML = `Chances left: ${count}`;
