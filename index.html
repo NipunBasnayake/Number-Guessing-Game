@@ -9,19 +9,20 @@
 
 </head>
 <body style="background: url(images/bg.jpg); width: 100%; background-size: cover; background-repeat: no-repeat; height: 100vh;" >
-    <div class="bg-white rounded-2 p-5 mt-5 m-auto w-50 shadow-lg">
-        <h1 class="text-center m-4">Number Guessing</h1>
+    <div class="bg-white rounded-4 p-5 mt-5 m-auto w-50 shadow-lg">
+        <h1 class="text-center m-4 fw-bold">Number Guessing</h1>
         <h5 class="text-center m-4">Guess a number between 1 to 10.</h5>
         <div class="text-center">
             <div class="text-center d-flex w-50 m-auto">
                 <input type="text" id="txtInput" class="form form-control m-auto ">
-                <input type="button" id="btnSubmit" class="btn btn-primary m-3" value="Guess" onclick="guess()">
+                <input type="button" id="btnSubmit" class="btn btn-primary m-3 fw-bold" value="Guess" onclick="guess()">
             </div>
             <p id="lblChances"></p>
             <p id="lblResult" >  </p>
         </div>
+        <div id="imgDiv">
+        </div>
     </div>
-
     <script src="app.js"></script>
 </body>
 </html>

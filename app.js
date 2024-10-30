@@ -1,10 +1,8 @@
 let randomNum = Math.floor((Math.random() * 10) + 1);
-console.log(randomNum);
-
-
+// console.log(randomNum);
 let lblChances = document.getElementById("lblChances");
 let lblResult = document.getElementById("lblResult");
-
+let imgDiv = document.getElementById("imgDiv");
 let count = 3;
 lblChances.innerHTML = `Chances left: ${count}`;
 
@@ -29,5 +27,6 @@ function guess() {
     } else {
         lblResult.innerHTML = `<p class="text-danger">Game Over! No more chances</p>`;
         alert("චාන්ස් ඉවරයි, ආයෙ දෙන්නෑ...😒");
+        // imgDiv.innerHTML = `<div id="imgDiv" class"text-center"><img src="https://media.tenor.com/DMWqIb2Rdp4AAAAi/bonk-cheems.gif" alt=""></div>`;
     }
 }
